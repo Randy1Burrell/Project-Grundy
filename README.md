@@ -106,3 +106,77 @@ Project Grundy provides an environment for:
 - Power failure protection
 
 ---
+
+# Platform Architecture
+
+```
+                Internet
+                    │
+            ┌───────────────┐
+            │ Reverse Proxy │
+            │   (Planned)   │
+            └───────┬───────┘
+                    │
+             Ubuntu Server VM
+                    │
+        ┌────────────────────────┐
+        │ Docker Engine          │
+        │ Docker Compose         │
+        └──────────┬─────────────┘
+                   │
+    ┌────────────────────────────────────┐
+    │ Homepage                           │
+    │ Portainer                          │
+    │ PostgreSQL                         │
+    │ Wiki.js                            │
+    │ Future Platform Services           │
+    └────────────────────────────────────┘
+                    │
+          Shared Docker Network
+                    │
+              Proxmox Hypervisor
+                    │
+          TrueNAS Storage Services
+```
+
+---
+
+# Software Stack
+
+## Virtualization
+
+- Proxmox VE
+
+## Operating Systems
+
+- Ubuntu Server
+- TrueNAS
+
+## Storage
+
+- ZFS
+- TrueNAS
+- SMB
+
+## Containers
+
+- Docker
+- Docker Compose
+
+## Databases
+
+- PostgreSQL
+
+## Documentation
+
+- Wiki.js
+
+## Container Management
+
+- Portainer
+
+## Dashboard
+
+- Homepage
+
+---
