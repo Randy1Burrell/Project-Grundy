@@ -1,10 +1,14 @@
 # Project Grundy
 
-*"Build it like production. Document it like open source. Improve it continuously."*
+**Version:** `v0.1.0` • **Core Platform Established**
+
+> *An Enterprise-Grade Self-Hosted Engineering Platform*
 
 ---
 
-> **An Enterprise-Grade Self-Hosted Engineering Platform**
+*"Build it like production. Document it like open source. Improve it continuously."*
+
+---
 
 Project Grundy is a production-inspired engineering platform built to design, deploy, operate, and document modern infrastructure using industry best practices.
 
@@ -422,3 +426,9 @@ The platform will continue evolving as new technologies emerge while remaining f
 # License
 
 This project is maintained for educational, research, and engineering purposes.
+
+# Release History
+
+| Version | Status | Highlights |
+|----------|--------|------------|
+| v0.1.0 | Core Platform Established | Proxmox, TrueNAS, Docker, Homepage, Portainer, PostgreSQL, Wiki.js |
