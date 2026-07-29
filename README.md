@@ -1,5 +1,9 @@
 # Project Grundy
 
+*"Build it like production. Document it like open source. Improve it continuously."*
+
+---
+
 > **An Enterprise-Grade Self-Hosted Engineering Platform**
 
 Project Grundy is a production-inspired engineering platform built to design, deploy, operate, and document modern infrastructure using industry best practices.
