@@ -355,3 +355,33 @@ Project-Grundy/
 - Self-hosted LLMs
 
 ---
+
+# Engineering Standards
+
+Project Grundy follows several engineering standards:
+
+- Infrastructure as Code
+- Git-first workflows
+- Documentation-driven engineering
+- Least privilege security
+- Automated backups
+- Continuous monitoring
+- Reproducible deployments
+- Change tracking
+- Incremental improvement
+
+---
+
+# Long-Term Vision
+
+Project Grundy is intended to become a fully self-hosted engineering platform capable of supporting modern software engineering, infrastructure operations, automation, artificial intelligence, and personal cloud services.
+
+Every deployment is viewed as an opportunity to improve operational excellence, strengthen engineering discipline, and expand practical knowledge through hands-on implementation.
+
+The platform will continue evolving as new technologies emerge while remaining focused on reliability, simplicity, security, and maintainability.
+
+---
+
+# License
+
+This project is maintained for educational, research, and engineering purposes.
