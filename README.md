@@ -180,3 +180,178 @@ Project Grundy provides an environment for:
 - Homepage
 
 ---
+
+# Current Status
+
+## Infrastructure
+
+- ✅ Proxmox deployed
+- ✅ Ubuntu Server deployed
+- ✅ TrueNAS deployed
+- ✅ ZFS configured
+- ✅ SMB shares configured
+
+## Container Platform
+
+- ✅ Docker installed
+- ✅ Docker Compose configured
+- ✅ Shared Docker networking established
+- ✅ Shared environment configuration implemented
+
+## Core Services
+
+- ✅ Homepage
+- ✅ Portainer
+- ✅ PostgreSQL
+- 🔄 Wiki.js verification in progress
+
+## Documentation
+
+- 🔄 Engineering documentation
+- 🔄 Architecture documentation
+- 🔄 Operational procedures
+- 🔄 Infrastructure standards
+
+---
+
+# Repository Structure
+
+```
+Project-Grundy/
+│
+├── README.md
+├── CHANGELOG.md
+├── ROADMAP.md
+├── TODO.md
+│
+├── compose/
+│
+├── docs/
+│   ├── architecture.md
+│   ├── docker.md
+│   ├── networking.md
+│   ├── storage.md
+│   ├── proxmox.md
+│   ├── security.md
+│   ├── backups.md
+│   ├── monitoring.md
+│   └── troubleshooting.md
+│
+├── diagrams/
+│
+├── scripts/
+│
+└── assets/
+```
+
+---
+
+# Current Services
+
+| Service | Purpose |
+|----------|---------|
+| Homepage | Engineering Platform Dashboard |
+| Portainer | Docker Management |
+| PostgreSQL | Shared Database Platform |
+| Wiki.js | Knowledge Management |
+
+---
+
+# Planned Platform Services
+
+## Networking
+
+- Traefik
+- Internal DNS
+- Automatic HTTPS
+- Service Discovery
+
+## Observability
+
+- Prometheus
+- Grafana
+- Loki
+- Alertmanager
+- Node Exporter
+- cAdvisor
+
+## Source Control
+
+- Gitea
+- Forgejo Runner
+
+## Security
+
+- Vaultwarden
+- Secret Management
+- Central Authentication
+
+## Productivity
+
+- Paperless-ngx
+- Nextcloud
+
+## Media
+
+- Immich
+- Jellyfin
+
+## Automation
+
+- n8n
+- Ansible
+- Terraform
+
+## Artificial Intelligence
+
+- Ollama
+- Open WebUI
+- Local LLMs
+
+---
+
+# Roadmap
+
+## Phase 1 — Foundation
+
+- Complete Wiki.js deployment
+- Complete documentation
+- Standardize Docker deployments
+- Version control infrastructure
+
+## Phase 2 — Networking
+
+- Reverse Proxy
+- Internal DNS
+- HTTPS
+- Service discovery
+
+## Phase 3 — Observability
+
+- Metrics
+- Dashboards
+- Centralized logging
+- Alerting
+
+## Phase 4 — Engineering Services
+
+- Source control
+- Password management
+- Document management
+- Private cloud
+- Media services
+
+## Phase 5 — Automation
+
+- Infrastructure as Code
+- Automated deployments
+- Automated backups
+- Disaster recovery
+
+## Phase 6 — AI Platform
+
+- Local AI infrastructure
+- AI-assisted engineering
+- Self-hosted LLMs
+
+---
