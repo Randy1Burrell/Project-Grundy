@@ -17,3 +17,39 @@ To build an enterprise-grade engineering platform that enables continuous learni
 Project Grundy is intended to become a complete self-hosted platform capable of supporting software engineering, infrastructure automation, private cloud services, AI workloads, media services, knowledge management, and disaster recovery.
 
 ---
+
+# Engineering Principles
+
+Every design decision within Project Grundy follows these guiding principles.
+
+## Reliability
+
+Infrastructure should continue operating predictably and recover gracefully from failures.
+
+## Simplicity
+
+Solutions should be easy to understand, maintain, and troubleshoot.
+
+## Automation
+
+Manual processes should be automated wherever practical.
+
+## Documentation
+
+Every deployment, architectural decision, and operational procedure should be documented.
+
+## Observability
+
+Every critical service should expose metrics, logs, and health information.
+
+## Security
+
+Security is considered during design rather than added later.
+
+## Reproducibility
+
+The complete platform should be rebuildable from version-controlled configuration with minimal manual intervention.
+
+## Continuous Improvement
+
+Project Grundy is designed as a long-term engineering platform that evolves through continual refinement and adoption of new technologies.
