@@ -395,6 +395,17 @@ Project-Grundy/
 | AI Platform | ⏳ |
 | Disaster Recovery | ⏳ |
 
+### Legend
+
+| Symbol | Meaning |
+|--------|---------|
+| ✅ | Complete / Operational |
+| 🚧 | In Progress |
+| ⏳ | Planned |
+| ❌ | Not Started |
+| ⚠️ | Requires Attention |
+| 🔄 | Under Review / Being Verified |
+
 ---
 
 # Engineering Standards
