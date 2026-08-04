@@ -6,11 +6,11 @@ The format is based on **Keep a Changelog**, and this project follows **Semantic
 
 ---
 
-## [Unreleased]
+## [Unreleased 2026-08-04]
 
 ### Added
 
-- Nothing yet.
+- Tailscale remote management
 
 ### Changed
 
@@ -64,6 +64,11 @@ The format is based on **Keep a Changelog**, and this project follows **Semantic
 
 - Established isolated Docker networking
 - Standardized environment variable management
+
+### Verified
+
+- All seven enterprise HDDs passed extended SMART testing.
+- Storage hardware qualified for production deployment.
 
 ### Notes
 
