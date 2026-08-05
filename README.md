@@ -24,6 +24,43 @@ To build an enterprise-grade engineering platform that enables continuous learni
 
 Project Grundy is intended to become a complete self-hosted platform capable of supporting software engineering, infrastructure automation, private cloud services, AI workloads, media services, knowledge management, and disaster recovery.
 
+## Start here
+
+- [System architecture](docs/Architecture/System.md)
+- [Home and project overview](docs/Architecture/Home.md)
+- [Network architecture](docs/Architecture/Network.md)
+- [Storage architecture](docs/Architecture/Storage.md)
+- [Proxmox](docs/Infrastructure/Proxmox/README.md)
+- [Ubuntu](docs/Infrastructure/Ubuntu/README.md)
+- [TrueNAS](docs/Infrastructure/TrueNAS/README.md)
+- [Docker](docs/Infrastructure/Docker/README.md)
+- [Networking](docs/Infrastructure/Networking/README.md)
+- [Drive qualification](docs/Infrastructure/Hardware/Drive-Qualification.md)
+- [UPS graceful shutdown runbook](docs/Operations/Runbooks/UPS-Graceful-Shutdown.md)
+- [Architecture decisions](docs/Engineering/Decisions/README.md)
+- [Lessons learned](docs/Engineering/Lessons-Learned.md)
+- [Project timeline](PROJECT-TIMELINE.md)
+
+## Documentation conventions
+
+- `Confirmed` means verified in the build history or by captured output.
+- `Planned` means an intended future state, not a deployed feature.
+- `To verify` identifies facts that must be checked on the running system.
+- Secrets, passwords, Tailscale auth keys, and private keys must never be committed.
+- Prefer stable identifiers such as VM IDs, disk serials, and `/dev/disk/by-id` over transient device names.
+
+## Current status
+
+| Area | State | Notes |
+|---|---|---|
+| Proxmox VE | Operational | Version 9.2 recorded in project history |
+| Ubuntu Server VM | Operational | Docker application host |
+| TrueNAS SCALE VM | Operational | Storage platform; pool state must be verified before changes |
+| Docker platform | Operational | Homepage, Portainer, Wiki.js, PostgreSQL |
+| Remote access | Operational | Tailscale; no public management ports intended |
+| Enterprise HDD qualification | Complete | Seven drives passed extended SMART tests |
+| UPS graceful shutdown | Ready to implement | Follow the runbook; exact Forza model/driver remains to be discovered |
+
 ---
 
 # Engineering Principles
@@ -81,114 +118,6 @@ Project Grundy provides an environment for:
 - Self-Hosted Services
 - Continuous Learning
 
----
-
-# Hardware
-
-## Compute
-
-- AMD Ryzen 9 9950X (16 Cores / 32 Threads)
-- ASRock X870E Taichi Motherboard
-- 64 GB DDR5 Memory (Expandable)
-- Corsair RM1000x 1000W Power Supply
-
-## Storage
-
-- 2 × 1 TB NVMe SSD (Proxmox mirrored boot pool)
-- 2 × 4 TB NVMe SSD (Application & VM storage mirror)
-- Additional HDD storage managed through TrueNAS
-- ZFS Storage Pools
-- Snapshot-based recovery
-
-## Virtualization
-
-- Proxmox VE 9.2
-- Hardware virtualization
-- PCIe passthrough
-- Dedicated infrastructure virtual machines
-
-## Power Protection
-
-- Forza UPS
-- Graceful shutdown support
-- Power failure protection
-
----
-
-# Platform Architecture
-
-```
-                Internet
-                    │
-            ┌───────────────┐
-            │ Reverse Proxy │
-            │   (Planned)   │
-            └───────┬───────┘
-                    │
-             Ubuntu Server VM
-                    │
-        ┌────────────────────────┐
-        │ Docker Engine          │
-        │ Docker Compose         │
-        └──────────┬─────────────┘
-                   │
-    ┌────────────────────────────────────┐
-    │ Homepage                           │
-    │ Portainer                          │
-    │ PostgreSQL                         │
-    │ Wiki.js                            │
-    │ Future Platform Services           │
-    └────────────────────────────────────┘
-                    │
-          Shared Docker Network
-                    │
-              Proxmox Hypervisor
-                    │
-          TrueNAS Storage Services
-```
-
----
-
-# Software Stack
-
-## Virtualization
-
-- Proxmox VE
-
-## Operating Systems
-
-- Ubuntu Server
-- TrueNAS
-
-## Storage
-
-- ZFS
-- TrueNAS
-- SMB
-
-## Containers
-
-- Docker
-- Docker Compose
-
-## Databases
-
-- PostgreSQL
-
-## Documentation
-
-- Wiki.js
-
-## Container Management
-
-- Portainer
-
-## Dashboard
-
-- Homepage
-
----
-
 # Current Status
 
 Project Grundy has successfully completed its foundational engineering platform phase and is ready for expansion into networking, observability, automation, and self-hosted services.
@@ -234,24 +163,14 @@ Project-Grundy/
 ├── ROADMAP.md
 ├── TODO.md
 │
-├── compose/
-│
 ├── docs/
-│   ├── architecture.md
-│   ├── docker.md
-│   ├── networking.md
-│   ├── storage.md
-│   ├── proxmox.md
-│   ├── security.md
-│   ├── backups.md
-│   ├── monitoring.md
-│   └── troubleshooting.md
+│   ├── Architecture
+│   ├── Diagrams
+│   ├── Engineering
+│   ├── Infrastructure
+│   └── Operations
 │
-├── diagrams/
-│
-├── scripts/
-│
-└── assets/
+└── PROJECT-TIMELINE.md
 ```
 
 ---
